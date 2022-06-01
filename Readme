@@ -1,0 +1,44 @@
+I have created API for Login ,Register, OTP Verification, using mongodB Working of API is define below:
+
+1. After cloning the code from git. give command npm install.
+2. after that give command npm start to run the server.
+3. server will start running on port 1000
+
+
+Before moving to post name I request you to create a db on mongodb and take out the password to put it in the env file db connection link at password place. so that you DB get connected.
+
+
+Signup: 
+
+Move to postman and give the request in this format:
+{
+        "firstname": "Akash",
+        "lastname": "Sharma",
+        "email": "akash@gmail.com",
+        "password": "123456"  
+}
+use URL: localhost:1000/signup with   (POST Method)
+
+
+
+
+
+
+
+then for OTP verification use this request:
+{
+    "otp":926642
+}
+use URL: localhost:1000/verify with   (POST Method)
+
+
+
+
+Then for Login :
+{
+    "email":"akash@gmail.com",
+    "password":"123456"
+}
+use URL: localhost:1000/login with (GET Method)
+
+
